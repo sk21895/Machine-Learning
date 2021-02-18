@@ -45,16 +45,22 @@ The models used here are LightGBM,SVM, XGBoostClassifier, RandomForest, VotingEn
 
 Finally the experiment is being submitted and using the Notebook widget(RunDetails(remote_run).show()), it is visualized. Once the run is successfully completed or executed, the best model is retrieved and saved in output folder in source directory.
 
+Settings and configurations for setting up cluster.
 ![AutoML_Config](https://github.com/Harini-Pavithra/Machine-Learning-Engineer-with-Microsoft-Azure-Nanodegree/blob/main/Capstone%20Project/AutoML/Screenshots/AutoML_Config.JPG)
 
+Submit Experiment: Here you can see properties and Best model Summary.
 ![6.RunDeatils](https://github.com/Harini-Pavithra/Machine-Learning-Engineer-with-Microsoft-Azure-Nanodegree/blob/main/Capstone%20Project/AutoML/Screenshots/6.RunDeatils.JPG)
 
+Experiment: Data guardrails details you can see.
 ![8.Data_Guardrails](https://github.com/Harini-Pavithra/Machine-Learning-Engineer-with-Microsoft-Azure-Nanodegree/blob/main/Capstone%20Project/AutoML/Screenshots/8.Data_Guardrails.JPG)
 
+From the Datasets option you can find out the dataset and view it's details.
 ![13.DatasetDetails](https://github.com/Harini-Pavithra/Machine-Learning-Engineer-with-Microsoft-Azure-Nanodegree/blob/main/Capstone%20Project/AutoML/Screenshots/13.DatasetDetails.JPG)
 
+You can view Best Model details and review those details.
 ![4.Best_Model](https://github.com/Harini-Pavithra/Machine-Learning-Engineer-with-Microsoft-Azure-Nanodegree/blob/main/Capstone%20Project/AutoML/Screenshots/4.Best_Model.JPG)
 
+From the automl experiment getting best model and displaying it's properties.
 ![AutoML_ID](https://github.com/Harini-Pavithra/Machine-Learning-Engineer-with-Microsoft-Azure-Nanodegree/blob/main/Capstone%20Project/AutoML/Screenshots/AutoML_ID.JPG)
 
 Screenshots are available in [AutoML/Screenshots](https://github.com/Harini-Pavithra/Machine-Learning-Engineer-with-Microsoft-Azure-Nanodegree/tree/main/Capstone%20Project/AutoML/Screenshots) folder
@@ -62,10 +68,13 @@ Screenshots are available in [AutoML/Screenshots](https://github.com/Harini-Pavi
 
 The first model we built is with the help of Azure AutoML for training many types of models such as LightGBM, XGBoostClassifier, RandomForest, VotingEnsemble, StackEnsemble etc.The best accuracy obtained from this model is 87.63%
 
+You can see different experiment details here.
 ![1.Run_details](https://github.com/Harini-Pavithra/Machine-Learning-Engineer-with-Microsoft-Azure-Nanodegree/blob/main/Capstone%20Project/AutoML/Screenshots/1.Run_details.JPG)
 
+Displaying the accuracy.
 ![2.Accuracy](https://github.com/Harini-Pavithra/Machine-Learning-Engineer-with-Microsoft-Azure-Nanodegree/blob/main/Capstone%20Project/AutoML/Screenshots/2.Accuracy.JPG)
 
+Displaying the ACU_Weighted.
 ![3.ACU_Weighted](https://github.com/Harini-Pavithra/Machine-Learning-Engineer-with-Microsoft-Azure-Nanodegree/blob/main/Capstone%20Project/AutoML/Screenshots/3.ACU_Weighted.JPG)
 
 The model can be futher improved by 2 increasing the estimate timeout for autoML to find best model.Thus a longer timeout will have greater number of models to run and thus higher the performance rate too.
@@ -82,16 +91,22 @@ The SKLearn estimator is created with the training script(train.py), directory p
 
 Finally the experiment is being submitted and using the Notebook widget(RunDetails(hyperdrive_run).show()), it is visualized. Once the run is successfully completed or executed, the best model is retrieved and saved in output folder in source directory.The saved model then registered.
 
+From All Experiments option you can view your experiment.
 ![9.Experiment](https://github.com/Harini-Pavithra/Machine-Learning-Engineer-with-Microsoft-Azure-Nanodegree/blob/main/Capstone%20Project/HyperDrive/Screenshots/9.Experiment.JPG)
 
+Graph showing visuals of the parameters in Scatter chart view.
 ![5.Parameters_Graph](https://github.com/Harini-Pavithra/Machine-Learning-Engineer-with-Microsoft-Azure-Nanodegree/blob/main/Capstone%20Project/HyperDrive/Screenshots/5.Parameters_Graph.JPG)
 
+Displaying the accuracy here. The best metric field is obtained from the min/max of primary metric achieved by a run.
 ![3.Accuracy](https://github.com/Harini-Pavithra/Machine-Learning-Engineer-with-Microsoft-Azure-Nanodegree/blob/main/Capstone%20Project/HyperDrive/Screenshots/3.Accuracy.JPG)
 
+Details of the completed experiment can be seen here. You can view properties and parameter sampling.
 ![11.Run_Details](https://github.com/Harini-Pavithra/Machine-Learning-Engineer-with-Microsoft-Azure-Nanodegree/blob/main/Capstone%20Project/HyperDrive/Screenshots/11.Run_Details.JPG)
 
+Get the best model and saving it.
 ![6.Best_Model](https://github.com/Harini-Pavithra/Machine-Learning-Engineer-with-Microsoft-Azure-Nanodegree/blob/main/Capstone%20Project/HyperDrive/Screenshots/6.Best_Model.JPG)
 
+From Model List option you can view your registerd model.
 ![HyperDrive_Registered_Model](https://github.com/Harini-Pavithra/Machine-Learning-Engineer-with-Microsoft-Azure-Nanodegree/blob/main/Capstone%20Project/HyperDrive/Screenshots/HyperDrive_Registered_Model.JPG)
 
 Screenshots are available in [Hyperdrive/Screenshots](https://github.com/Harini-Pavithra/Machine-Learning-Engineer-with-Microsoft-Azure-Nanodegree/tree/main/Capstone%20Project/HyperDrive/Screenshots) folder
@@ -99,8 +114,10 @@ Screenshots are available in [Hyperdrive/Screenshots](https://github.com/Harini-
 
 The second model we built is trained with Logistic regression and HyperDrive parameters which are tuned with the help of Azure ML python SDK and HyperDrive tools(Azure HyperDrive functionalities).The best accuracy obtained from this model is 75.75%
 
+Experiment submition.
 ![1.HyperDrive_Run](https://github.com/Harini-Pavithra/Machine-Learning-Engineer-with-Microsoft-Azure-Nanodegree/blob/main/Capstone%20Project/HyperDrive/Screenshots/1.HyperDrive_Run.JPG)
 
+View best metrics after run.
 ![2.Best_Metrics](https://github.com/Harini-Pavithra/Machine-Learning-Engineer-with-Microsoft-Azure-Nanodegree/blob/main/Capstone%20Project/HyperDrive/Screenshots/2.Best_Metrics.JPG)
 
 The model can be futher improved with the help of tuning other parameters such as the criterion used to define the optimal split and the min/max samples leaf number of samples in the leaf node of each tree.
@@ -116,18 +133,25 @@ Thus,Automl's model has the highest accuracy.The model with the best accuracy is
 
 Initially, the best model is registered and it's necessary files are downloaded.Then the Environment and inference is created with the help of required conda dependencies and score.py script file which has the intialization and exit function defined for the best model and the model is deployed with ACI(Azure Container Instance) and configurations such as cpu_cores=1, memory_gb=1.Once the deployment is sucessful, applications insights is enabled and the state of the service is verified.Then the behaviour of the endpoint is analyzed and the service is deleted
 
+Hit url and get response.
 ![Response](https://github.com/Harini-Pavithra/Machine-Learning-Engineer-with-Microsoft-Azure-Nanodegree/blob/main/Capstone%20Project/Model%20Deployment/Response.JPG)
 
+Response converting in json strings.
 ![Response_1](https://github.com/Harini-Pavithra/Machine-Learning-Engineer-with-Microsoft-Azure-Nanodegree/blob/main/Capstone%20Project/Model%20Deployment/Response_1.JPG)
 
+From models options view your best suited model.
 ![1.Model](https://github.com/Harini-Pavithra/Machine-Learning-Engineer-with-Microsoft-Azure-Nanodegree/blob/main/Capstone%20Project/Model%20Deployment/1.Model.JPG)
 
+Check details of the model under details option.
 ![2.Model_details](https://github.com/Harini-Pavithra/Machine-Learning-Engineer-with-Microsoft-Azure-Nanodegree/blob/main/Capstone%20Project/Model%20Deployment/2.Model_details.JPG)
 
+Real-time endpoints for the model.
 ![4.Endpoints](https://github.com/Harini-Pavithra/Machine-Learning-Engineer-with-Microsoft-Azure-Nanodegree/blob/main/Capstone%20Project/Model%20Deployment/4.Endpoints.JPG)
 
+From endpoints option you can view endpoint details.
 ![7.Endpoint_Detail](https://github.com/Harini-Pavithra/Machine-Learning-Engineer-with-Microsoft-Azure-Nanodegree/blob/main/Capstone%20Project/Model%20Deployment/7.Endpoint_Detail.JPG)
 
+Printing logs and deleting the service.
 ![6.Service_Delete](https://github.com/Harini-Pavithra/Machine-Learning-Engineer-with-Microsoft-Azure-Nanodegree/blob/main/Capstone%20Project/Model%20Deployment/6.Service_Delete.JPG)
 
 Screensots are available in [Model Deployment](https://github.com/Harini-Pavithra/Machine-Learning-Engineer-with-Microsoft-Azure-Nanodegree/tree/main/Capstone%20Project/Model%20Deployment) folder
